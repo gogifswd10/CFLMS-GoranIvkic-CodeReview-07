@@ -1,0 +1,14 @@
+<div class="row buffer">
+	<div id="karte" *ngFor="let destinations of destinations; index as destinationsId" class="col-sm-6 col-md-4 col-lg-3">
+	  <img class="card-img-top" src="{{ destinations.picture }}" alt="Card image cap">
+	  <div class="card-body">
+	    <h5 class="card-title">{{ destinations.place }}</h5>
+	    <p class="card-text">{{ destinations.description }}.</p>
+	    <p class="card-date">Date: {{ destinations.date }}</p>
+	    <p class="card-duration">{{ destinations.duration }}.</p>
+	    <p class="card-price">Price: {{ destinations.price }}€</p><hr>
+	    <a [routerLink]="['/blogcontents', 'blogcontentsId']" class="btn btn-primary">{{ destinations.place }} Blog</a><br><hr>
+	    <a href="#" class="btn btn-primary">Book now!</a><br><hr>
+	  </div>
+	</div>
+</div>

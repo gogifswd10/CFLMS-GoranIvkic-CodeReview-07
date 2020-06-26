@@ -1,0 +1,12 @@
+<div class="row buffer">
+	<div id="karte" *ngFor="let blogcontents of blogcontents; index as blogcontentsId" class="col-sm-6 col-md-4 col-lg-3">
+	  <img class="card-img-top" src="{{ blogcontents.picture }}" alt="Card image cap">
+	  <div class="card-body">
+	    <h5 class="card-title">{{ destination.place }}</h5>
+	    <p class="card-duration">{{ blogcontents.name }}.</p>
+	    <p class="card-date">Date: {{ blogcontents.date }}</p>
+	    <p class="card-text">{{ blogcontents.description }}.</p>
+	    <a href="#" class="btn btn-primary">Book now!</a><br><hr>
+	  </div>
+	</div>
+</div>
