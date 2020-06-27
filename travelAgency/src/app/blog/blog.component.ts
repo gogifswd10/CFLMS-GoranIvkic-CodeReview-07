@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { blogcontents } from '../blogcontents'
+
 @Component({
   selector: 'app-blog',
   templateUrl: './blog.component.html',

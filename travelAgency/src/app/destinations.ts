@@ -9,7 +9,7 @@ export const destinations = [
  },
  {
  	picture: 'assets/img/usa.png',
-   place: 'USA East',
+   place: 'East USA',
    description: 'Rental car tour',
    date: "29-08-2020",
    duration: "14 days/13 nights",

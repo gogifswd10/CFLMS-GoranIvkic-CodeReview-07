@@ -1,14 +1,19 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { HomeComponent } from './home/home.component';
 import { TravelsComponent } from './travels/travels.component';
 import { BlogComponent } from './blog/blog.component';
 
 const routes: Routes = [
-{
-                path:"", component: TravelsComponent
-        },{
-                path: 'blogcontents/:blogcontentsId', component: BlogComponent
-        }
+		{
+                path:"", component: HomeComponent
+        },
+        {
+                path: "blog", component: BlogComponent
+        },
+        {
+                path:"travels", component: TravelsComponent
+        },
 
 ];
 
